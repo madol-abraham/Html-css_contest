@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorConnect - Apply as a Mentor</title>
+    <style>
+        body{
+            background-color: grey;
+            text-align: center;
+            padding: auto;
+            margin-top: 2px;
+            margin-left: 3px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Apply as a Mentor</h1>
+    </header>
+    <main>
+        <section id="mentor-application-form">
+            <h2>Mentor Application Form</h2>
+            <!-- Mentor application form code goes here -->
+            <form action="mentor_application.php" method="POST">
+                <label for="mentor_name">Name:</label>
+                <input type="text" id="mentor_name" name="mentor_name" required><br>
+    
+                <label for="mentor_expertise">Expertise:</label>
+                <input type="text" id="mentor_expertise" name="mentor_expertise" required><br>
+    
+                <label for="mentor_email">Email:</label>
+                <input type="email" id="mentor_email" name="mentor_email" required><br>
+    
+                <label for="mentor_bio">Bio:</label>
+                <textarea id="mentor_bio" name="mentor_bio" required></textarea><br>
+    
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="mentors.html">Mentors</a>
+            <a href="about.html">About</a>
+            <a href="apply-as-mentor.html">Apply as a Mentor</a>
+        </nav>
+    </footer>
+</body>
+</html>
+
