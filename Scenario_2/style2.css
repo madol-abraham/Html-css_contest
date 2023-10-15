@@ -1,0 +1,184 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: darkcyan;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+}
+
+/* Section headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation styling */
+nav {
+    text-align: center;
+    background-color: darkcyan;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: rgb(1, 75, 85);
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Links in the footer */
+footer a {
+    color: hsl(0, 9%, 57%);
+    text-decoration: none;
+}
+
+/* List items in the categories section */
+ul {
+    list-style: circle;
+    padding-left: 20px;
+    color: red;
+}
+
+ul li {
+    margin-bottom: 2rem;
+}
+
+/* Apply as a Mentor form */
+form {
+    background-color: magenta;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Text input fields in the form */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #0e5fb633;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Apply some hover effects to buttons */
+input[type="submit"]:hover, nav a:hover {
+    background-color: rgb(red, green, blue);
+}
+
+
+/* Default styles for larger screens */
+/* For screens wider than 768px, for example */
+@media (min-width: 768px) {
+    /* Place your default CSS here */
+}
+
+/* Styles for medium-sized screens (e.g., tablets) */
+@media (max-width: 768px) {
+    /* Adjust styles for medium-sized screens here */
+    header {
+        padding: 2rem;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Styles for smaller screens (e.g., smartphones) */
+@media (max-width: 576px) {
+    /* Adjust styles for smaller screens here */
+    header {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        margin: 0 0.3rem;
+    }
+
+    /* Center the mentor application form */
+    form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /* Adjust input and textarea styles for smaller screens */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust submit button size for smaller screens */
+    input[type="submit"] {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.9rem;
+    }
+}
